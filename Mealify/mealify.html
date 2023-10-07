@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Source+Code+Pro:ital,wght@0,300;1,200&family=Tajawal:wght@200;300&display=swap" rel="stylesheet"> 
     
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Geologica:wght@700&family=Nanum+Pen+Script&family=Source+Code+Pro:ital,wght@0,300;1,200&family=Tajawal:wght@200;300&display=swap" rel="stylesheet">
     
     <!-- fontawsome -->
     <!-- <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
@@ -22,9 +26,10 @@
 </head>
 <body>
     <!-- navbar -->
+    <div class="con">
     <div class="nav">
         <div class="title">
-             <a href="#">Mealify</a>
+             <a href="#home">Mealify</a>
         </div>
         <div class="sidenav">
              <a href="#home">Home</a>
@@ -33,19 +38,20 @@
              <a href="#contact">Contact</a>
         </div>
         <div class="darkmood">
-             <img src="../imgs/night-mode.png" alt="imgmood">
+          <button onclick="myFunction()"><i class="fa-solid fa-moon mood"></i></button>  
         </div>
      </div>
+</div>
      <!-- header -->
-     <div class="header">
-        <div class="sidewrite">
+     <div id="home" class="header">
+        <div class="sidewrite ">
           <h2>Enjoy Your Healthy
                Delicious Food
           </h2>
            <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
           <div class="buttomandbook">
-               <button class="table" >Book a Table</button>
-               <a href="#" class="watch" > <img src="../imgs/play.png">Watch a Video</a>
+               <button class="table" > <a href="#contact">Book a Table</a></button>
+               <a href="https://www.youtube.com/" target="_blank" class="watch" > <span class="bgicon">  <i class="fa-solid fa-play playicon"></i></span> Watch a Video</a>
           </div>
         </div>
         <div class="imgheader">
@@ -56,7 +62,7 @@
 
 
      <!-- chefs -->
-     <div class="container">
+     <div id="chefs" class="container ">
           <p>CHEFS</p>
          <h2> Our<span>Proffesional</span>  Chefs</h2>
         <div class="chefs">
@@ -92,37 +98,83 @@
      </div>
 
      <!--gallery  -->
-    <div class="container2">
+     <div id="gallery" class=" container-fluid2">
+    <div class="container2 ">
           <p>GALLERY</p>
           <h2>Check <span>Our Gallery</span></h2>
           <div class="gallery">
                <div class="colume">
                     <div class="photo">
                          <img src="https://alfaroukroute.github.io/Mealify/assets/img/gallery/meal-1.jpg" alt="">
+                         <div class="layout">
+                              <div class="content">
+                                   <h2>Pizza</h2>
+                                   <p> Hawaiian pizza with ham and pineapple</p>
+                              </div>
+                         </div>
                     </div>
                     <div class="photo">
                          <img src="https://alfaroukroute.github.io/Mealify/assets/img/gallery/meal-4.jpg" alt="">
+                         <div class="layout">
+                              <div class="content">
+                                  <h2> Levitation pizza</h2>
+                                  <p>Levitation pizza on black background.</p>
+                              </div>
+                         </div>
                     </div>
                
                </div>
                <div class="colume">
                     <div class="photo">
                          <img src="https://alfaroukroute.github.io/Mealify/assets/img/gallery/meal-2.jpg" alt="" >
+                          <div class="layout">
+                              <div class="content">
+                                 <h2>  Beef steaks</h2>
+ <p>Tasty beef steaks flying above cast iron grate with fire flames.</p>
+                              </div>
+                          </div>
                     </div>
                     <div class="photo">
                          <img src="https://alfaroukroute.github.io/Mealify/assets/img/gallery/meal-7.jpg" alt="">
+                         <div class="layout">
+                              <div class="content">
+                                  <h2> Frittata</h2>
+<p>Frittata or potato pie in a ceramic plate</p>
+                              </div>
+                         </div>
                     </div>
                
                </div>
                <div class="colume">
                     <div class="photo">
                          <img src="https://alfaroukroute.github.io/Mealify/assets/img/gallery/meal-3.jpg" alt="" >     
+                         <div class="layout">
+                              <div class="content">
+                                 <h2>  Burger</h2>
+<p>grass fed bison hamburger with chips & beer</p>
+                              </div>
+                         </div>
                     </div>
                     <div class="photo">
                          <img src="https://alfaroukroute.github.io/Mealify/assets/img/gallery/meal-5.jpg" alt="">
+                         <div class="layout">
+                              <div class="content">
+                                  <h2> Crispy Fried Chicken</h2>
+<p>Golden brown chicken legs with a crunchy coating and juicy meat</p>
+                              </div>
+                         </div>
+                   
                     </div>
                     <div class="photo">
                          <img src="https://alfaroukroute.github.io/Mealify/assets/img/gallery/meal-6.jpg" alt="">
+                         <div class="layout">
+                              <div class="content">
+                                  <h2> Lyulya kebab</h2>
+<p>Tender and juicy skewers of ground lamb or beef, flavored with aromatic spices and herbs</p>
+
+
+                              </div>
+                         </div>
                     </div>
                </div>
 
@@ -130,10 +182,12 @@
 
 
      </div>
-
+</div>
        <!-- contact -->
 
-         <div class="container">
+         <div id="contact" class="container">
+          <p>contant</p>
+          <h2>Need Help ? <span>Contact Us</span> </h2>
           <div class="contact">
                <div class="map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.999368885781!2d31.327234024701223!3d30.06555257491292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fccc4e5bfc5%3A0xc551dcd71cfb036c!2sRoute%20Academy!5e0!3m2!1sar!2seg!4v1686142260163!5m2!1sar!2seg" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -269,6 +323,12 @@
 
 
 
+<script>
+     function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
 
+     }
+     </script>
 </body>
 </html>
